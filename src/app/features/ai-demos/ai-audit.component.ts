@@ -182,7 +182,7 @@ export class AiAuditComponent {
   aiResource = resource({
     params: () => ({ tick: this.triggerAnalysis(), text: this.debouncedContent() }),
     loader: async ({ params: request }) => {
-      if (request.tick === 0) return undefined;
+      if (request.tick === 0 || !request.text) return undefined;
 
       // Initialize Gemini (Replace YOUR_API_KEY with actual key)
       const client = new GoogleGenAI({ apiKey: '' });
