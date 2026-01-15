@@ -25,7 +25,10 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build -- --base-href /angular21-whats-new/
+        run: |
+          npm run build -- --base-href /angular21-whats-new/
+          cp dist/angular21-whats-new/browser/index.csr.html dist/angular21-whats-new/browser/index.html
+          cp dist/angular21-whats-new/browser/index.csr.html dist/angular21-whats-new/browser/404.html
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
