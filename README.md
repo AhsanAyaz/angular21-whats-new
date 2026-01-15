@@ -8,7 +8,7 @@ This project demonstrates the cutting-edge features of Angular v21, focusing on 
 
 The application runs without `zone.js`. Change detection is triggered explicitly or via Signals, resulting in better performance and strictly typed async flows.
 
-- **Demo:** [/zoneless](/zoneless)
+- **Demo:** [/zoneless](https://ahsanayaz.github.io/angular21-whats-new/zoneless)
 - **Code:** `src/app/features/zoneless/`
 - **Config:** `provideZonelessChangeDetection()` in `app.config.ts`.
 
@@ -16,21 +16,21 @@ The application runs without `zone.js`. Change detection is triggered explicitly
 
 A "Before and After" comparison showing how `signal()`, `computed()`, and `effect()` replace traditional variable mutations and automatic change detection.
 
-- **Demo:** [/signals](/signals)
+- **Demo:** [/signals](https://ahsanayaz.github.io/angular21-whats-new/signals)
 - **Code:** `src/app/features/signals/`
 
 ### 3. New Control Flow & Deferred Loading
 
 Showcasing the new built-in syntax (`@if`, `@for`) and the powerful `@defer` block for declarative lazy loading of heavy components.
 
-- **Demo:** [/control-flow](/control-flow)
+- **Demo:** [/control-flow](https://ahsanayaz.github.io/angular21-whats-new/control-flow)
 - **Code:** `src/app/features/control-flow/`
 
 ### 4. Signal Forms (Native v21 API)
 
 A look at the future of forms in Angular using the **native Signal Forms API** from `@angular/forms/signals`. Uses a model-driven approach allowing direct binding to signals without the boilerplate of `ControlValueAccessor`.
 
-- **Demo:** [/signal-forms](/signal-forms)
+- **Demo:** [/signal-forms](https://ahsanayaz.github.io/angular21-whats-new/signal-forms)
 - **Code:** `src/app/features/forms/`
 - **API:** Imports `form()`, `Field`, `required()`, `email()` from `@angular/forms/signals`
 
@@ -42,7 +42,7 @@ Demonstrates the new reactive primitives designed for async data (like AI respon
 
 - **`resource()`**: Handles async loading state (`isLoading`, `value`, `error`) automatically.
 - **`linkedSignal()`**: (Simulated) Resets state based on dependencies (e.g., changing draft content resets status to 'Unsaved').
-- **Demo:** [/ai-audit](/ai-audit)
+- **Demo:** [/ai-audit](https://ahsanayaz.github.io/angular21-whats-new/ai-audit)
 - **Code:** `src/app/features/ai-demos/`
 
 ### 6. Angular Aria (Headless UI)
@@ -54,7 +54,7 @@ Showcases the "Headless" approach to accessible components using the official `@
 - **Listbox** (`@angular/aria/listbox`): Accessible list selection with arrow key navigation
 - **Tree** (`@angular/aria/tree`): Accessible tree view with expand/collapse functionality
 
-- **Demo:** [/aria](/aria)
+- **Demo:** [/aria](https://ahsanayaz.github.io/angular21-whats-new/aria)
 - **Code:** `src/app/features/aria/`
 
 ## 🤖 AI Integrations
